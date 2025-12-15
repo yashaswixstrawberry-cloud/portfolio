@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayush Yadav | Video Editor</title>
+
+  <!-- Google se hide -->
+  <meta name="robots" content="noindex, nofollow">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #0f0f0f; /* Simple solid dark background */
+      color: #ffffff;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 80px auto;
+      padding: 40px;
+      background-color: rgba(15, 15, 15, 0.9); /* Thoda depth ke liye */
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    h1 { font-size: 36px; margin-bottom: 5px; }
+    h2 { font-size: 18px; color: #b3b3b3; margin-bottom: 30px; }
+    p { font-size: 16px; line-height: 1.7; color: #d9d9d9; }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 40px;
+    }
+    ul li {
+      font-size: 15px;
+      padding: 8px 0;
+      border-bottom: 1px solid #2a2a2a;
+    }
+    .label { color: #888; }
+
+    /* Video layout */
+    .video-layout {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .left-column, .right-column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .video-layout video {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      display: block;
+    }
+
+    .horizontal-video {
+      aspect-ratio: 16 / 9;
+    }
+
+    /* Mobile responsive */
+    @media (max-width: 768px) {
+      .container {
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      h1 { font-size: 30px; }
+      h2 { font-size: 16px; }
+      p { font-size: 15px; }
+      .video-layout {
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <h1>Ayush Yadav</h1>
+    <h2>Video Editor</h2>
+
+    <p>
+      Creative and passionate video editor with a strong understanding of
+      storytelling and visual flow. Focused on creating clean, engaging, and
+      impactful edits, especially using DaVinci Resolve.
+    </p>
+
+    <h3 style="margin-top:50px;">My Work</h3>
+
+    <div class="video-layout">
+      <!-- Left Column: Video 3 (horizontal) + Video 2 (vertical) -->
+      <div class="left-column">
+        <video controls poster="" class="horizontal-video">
+          <source src="video3.mp4" type="video/mp4">
+        </video>
+        <video controls poster="">
+          <source src="video2.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Right Column: Video 1 (vertical) + Video 4 (horizontal) -->
+      <div class="right-column">
+        <video controls poster="">
+          <source src="video1.mp4" type="video/mp4">
+        </video>
+        <video controls poster="" class="horizontal-video">
+          <source src="video4.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <ul>
+      <li><span class="label">Experience:</span> Fresher – 6 months hands-on editing</li>
+      <li><span class="label">Software:</span> DaVinci Resolve (Strong), Adobe Premiere Pro, After Effects</li>
+      <li><span class="label">Education:</span> 12th Pass</li>
+      <li><span class="label">Work Style:</span> Clean, minimal, smooth pacing</li>
+      <li><span class="label">Goal:</span> Entry-level opportunity to grow as a professional video editor</li>
+    </ul>
+
+  </div>
+</body>
+</html>
